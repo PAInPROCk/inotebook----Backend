@@ -7,12 +7,12 @@ connectToMongo();
 
 app.use(express.json()); // for parsing JSON in request body
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use('/api/auth', require('./routes/auth.js'))
+app.use('/api/notes', require('./routes/notes.js'))
 
-// add this
-app.use('/api/auth', authRoutes);
+app.get('/', (req, res) => {
+  res.send('API is up and running 🚀');
+});
 
 app.listen(3000, () => {
   console.log('Example app listening on port 3000');
