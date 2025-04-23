@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "inotebook",
     "collectionId": "e1afbe72-fbfd-4bec-87c0-a15986d3583a",
-    "dateExported": "2025-04-23T08:18:11.082Z",
+    "dateExported": "2025-04-23T09:53:07.891Z",
     "version": "1.2",
     "folders": [
         {
@@ -23,7 +23,7 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2025-04-23T07:59:25.520Z",
-            "modified": "2025-04-23T08:08:31.311Z",
+            "modified": "2025-04-23T09:16:16.043Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -32,10 +32,32 @@
             ],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\" : \"Steve oath\",\n  \"email\" : \"steve723@gmail.com\",\n  \"password\" : \"steve1234$\"\n}",
+                "raw": "{\n  \"name\" : \"Raj mehta1\",\n  \"email\" : \"rmehta24@gmail.com\",\n  \"password\" : \"raj1234$\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ab968ead-850a-44cc-88dd-67747ae145aa",
+            "colId": "e1afbe72-fbfd-4bec-87c0-a15986d3583a",
+            "containerId": "55355c8c-f49b-4cca-92c8-87a6f383052e",
+            "name": "User  Login using credentials",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-04-23T09:41:30.876Z",
+            "modified": "2025-04-23T09:52:00.050Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" : \"rmehta24@gmail.com\",\n  \"password\" : \"raj1234$\"\n}",
                 "form": []
             }
         }
     ],
-    "ref": "mNBmR3ga8pSz_-Jhib36D3p8OYp5uNA5VjOgW5NFflZxXRD_1XB6Z2p8je32j2d0JpPoFNVleyL7Svq_WMbcKg"
+    "ref": "mNBmR3ga8pSz_-Jhib36DyJyKtjC3SlBlZuBiFTada98aNfCZtJlQj-Qcg44B63q3mp5GCffnCX0KZRvkAfO0g"
 }
