@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require('../models/User'); 
 const { body, validationResult } = require('express-validator');
 
-router.post('/', [
+router.post('/createuser', [
   body('name', 'Enter a Valid Name').isLength({ min: 3 }),
   body('email', 'Enter a Valid Email').isEmail(),
   body('password', 'Password must be at least 8 characters').isLength({ min: 8 }),
@@ -24,7 +24,7 @@ router.post('/', [
     res.json(user);
   } catch (error) {
     console.error(error.message);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("User Already Exists");
   }
 });
 
